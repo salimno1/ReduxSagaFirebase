@@ -21,7 +21,8 @@ const NotesListReducer = (state = initialState, action) => {
     case FETCHING_GET_LIST_DATA_SUCCESS:
       return {
         ...state,
-        notesList: action.noteListData,
+        notesList: action.notesListData,
+        isNotesDataFetching: false,
       };
     case FETCHING_GET_LIST_DATA_FAILED:
       return {

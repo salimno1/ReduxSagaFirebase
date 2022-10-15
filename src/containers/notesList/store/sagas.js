@@ -1,5 +1,9 @@
 import axios from "axios";
-import { call, takeEvery } from "redux-saga/effects";
+import { call, takeEvery, put } from "redux-saga/effects";
+import {
+  initFetchingGetListData,
+  initFetchingGetListDataSuccessfull,
+} from "./actions";
 import { INIT_GET_LIST_DATA } from "./actionType";
 
 export default function* NotesListSaga() {
@@ -7,9 +11,22 @@ export default function* NotesListSaga() {
 }
 
 function* getNotesListSaga() {
-  console.log("list saga");
-
+  yield put(initFetchingGetListData());
   try {
-    const response = yield call(axios.get, "");
+    const response = yield call(
+      axios.get,
+      "https://vitarplats-8e791-default-rtdb.europe-west1.firebasedatabase.app/notesList.json"
+    );
+
+    if (response && response.status === 200) {
+      const { data } = response;
+      const createData = [];
+
+      for (const key in data) {
+        createData.push(data[key]);
+      }
+
+      yield put(initFetchingGetListDataSuccessfull(createData));
+    }
   } catch (error) {}
 }
