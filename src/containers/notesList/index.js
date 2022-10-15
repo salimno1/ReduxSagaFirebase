@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { initGetListData } from "./store/actions";
 import "./style.css";
-
-function NotesList() {
-  const dummydata = [
-    {
-      name: "salim",
-      id: 1,
-    },
-    { name: "omar", id: 2 },
-  ];
+const dummydata = [
+  {
+    name: "salim",
+    id: 1,
+  },
+  { name: "omar", id: 2 },
+];
+const NotesList = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(initGetListData());
+  });
   return (
     <div className="notes-list-wrapper">
       <h1>notes list</h1>
@@ -20,6 +25,6 @@ function NotesList() {
       </ul>
     </div>
   );
-}
+};
 
 export default NotesList;

@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { initSaveNotesValue } from "./store/actions";
 import "./style.css";
 
 function Addnew() {
   const [notesName, setNotesName] = useState("");
   const dispatch = useDispatch();
+  const { success } = useSelector((state) => state.AddNotesReducer);
+  useEffect(() => {
+    if (success) {
+      setNotesName("");
+    }
+  }, [success]);
 
   const handleOnChange = (e) => {
     const { value } = e.target;
@@ -16,6 +22,7 @@ function Addnew() {
 
   const handleClick = () => {
     dispatch(initSaveNotesValue(notesName));
+    console.log(success);
   };
   return (
     <div classname="add-new-note-wrap">
@@ -26,6 +33,7 @@ function Addnew() {
           name="addTodo"
           placeholder="enter a todo"
           onChange={handleOnChange}
+          value={notesName}
         />
         <button onClick={handleClick}>add</button>
       </div>
