@@ -1,0 +1,19 @@
+.notes-list-wrapper h1 {
+  margin: 0px;
+}
+
+.notes-list-wrapper ul {
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.notes-list-wrapper ul li {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: aliceblue;
+}
