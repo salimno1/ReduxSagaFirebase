@@ -8,6 +8,7 @@ import Nav from "./components/header/header";
 import NewsCard from "./components/newsCard/newsCard";
 import Nyheter from "./pages/nyheter/nyheter";
 import LandingPage from "./pages/landing/landingPage";
+import { Partners } from "./pages/partners/partners";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" index element={<LandingPage />} />
         <Route path="/nyheter" index element={<Nyheter />} />
-        <Route path="/blogg" element={<NewsCard />} />
+        <Route path="/partners" element={<Partners />} />
         <Route path="/add-new-note" element={<Addnew />} />
       </Routes>
     </div>

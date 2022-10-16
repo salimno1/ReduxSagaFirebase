@@ -2,7 +2,9 @@ import React from "react";
 import bannerPic from "../../img/graf.png";
 import "./landingPage.css";
 import videoBg from "../../img/filmhemsida.mp4";
+import { useNavigate } from "react-router-dom";
 function LandingPage() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="menuBg"></div>
@@ -22,7 +24,9 @@ function LandingPage() {
               alt=""
             />
           </div>
-          <h1>#TILLSAMMANSÄRVISTARKA</h1>
+          <h1 className="tillsammansLink" onClick={() => navigate("/partners")}>
+            #TILLSAMMANSÄRVISTARKA
+          </h1>
         </div>
       </div>
     </>

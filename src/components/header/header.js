@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Nav() {
   const navigate = useNavigate();
-  const menuRef = useRef();
+
   const [isActive, setActive] = useState("");
 
   const handleToggle = () => {
@@ -48,7 +48,11 @@ function Nav() {
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link link3">
+              <a
+                href=""
+                className="menu_link link3"
+                onClick={() => navigate("/partners")}
+              >
                 samarbete
               </a>
             </li>

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+
+.partnerLogo img {
+  width: 250px;
+  height: 200px;
+  margin: 0px 10px;
+  object-fit: contain;
+}
+.partnerLogo {
+  height: 60vh;
+  background-color: rgba(240, 248, 255, 0.829);
+}
+.partnerContainer {
+  display: flex;
+  flex-direction: column;
+  background: url(../../img/graf.png);
+}
+
+.partnerText {
+  padding: 100px 200px 0px 200px;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.63);
+  height: 40vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(240, 248, 255, 0.829);
+}

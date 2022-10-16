@@ -39,3 +39,21 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.menuBg {
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.85);
+}
+.tillsammansLink {
+  user-select: none;
+}
+.tillsammansLink:hover {
+  cursor: pointer;
+}
