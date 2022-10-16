@@ -20,33 +20,35 @@ const NotesList = () => {
   }
   return (
     <>
-      <div className="sectionHeader">
-        <h2 className="sectionTitle">Nyheter</h2>
-      </div>
-      <div className="notes-list-wrapper">
-        {notesList &&
-          notesList.map((item) => (
-            <div className="postContainer">
-              <NewsCard post={item} />
-            </div>
-          ))}
-      </div>
-
-      <div className="latestNewsContainer">
-        <div className="leftnewsContainer">
-          <div className="latestNewsWrapper">
-            <div className="sectionHeader1">
-              <h2 className="sectionTitle1">Senaste</h2>
-            </div>
-            {notesList &&
-              notesList.map((item) => (
-                <div className="LatestHolder">
-                  <LatestNews post={item} />
-                </div>
-              ))}
-          </div>
+      <div className="nyheterContainer">
+        <div className="sectionHeader">
+          <h2 className="sectionTitle">Nyheter</h2>
         </div>
-        <div className="rightNewsContainer"></div>
+        <div className="notes-list-wrapper">
+          {notesList &&
+            notesList.map((item) => (
+              <div className="postContainer">
+                <NewsCard post={item} />
+              </div>
+            ))}
+        </div>
+
+        <div className="latestNewsContainer">
+          <div className="leftnewsContainer">
+            <div className="latestNewsWrapper">
+              <div className="sectionHeader1">
+                <h2 className="sectionTitle1">Senaste</h2>
+              </div>
+              {notesList &&
+                notesList.map((item) => (
+                  <div className="LatestHolder">
+                    <LatestNews post={item} />
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="rightNewsContainer"></div>
+        </div>
       </div>
     </>
   );

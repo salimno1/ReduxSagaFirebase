@@ -1,15 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
+  const navigate = useNavigate();
   const menuRef = useRef();
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState("");
 
   const handleToggle = () => {
     setActive((isActive) => !isActive);
   };
 
   let toggleClassCheck = isActive ? " is-active" : "";
+
   console.log(isActive);
   return (
     <>
@@ -21,12 +24,16 @@ function Nav() {
         <div className="container bg">
           <ul className="menu_list">
             <li className="menu_item">
-              <a href="" className="menu_link">
+              <a href="" className="menu_link" onClick={() => navigate("/")}>
                 Hem
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link link1">
+              <a
+                href=""
+                className="menu_link link1"
+                onClick={() => navigate("/nyheter")}
+              >
                 Nyheter
               </a>
             </li>

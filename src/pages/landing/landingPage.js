@@ -5,6 +5,7 @@ import videoBg from "../../img/filmhemsida.mp4";
 function LandingPage() {
   return (
     <>
+      <div className="menuBg"></div>
       <div className="main">
         <div className="overlay"></div>
         <video
