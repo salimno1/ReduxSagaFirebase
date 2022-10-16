@@ -196,6 +196,17 @@ body {
   background: #33ebdc;
   transition: 0.3s;
 }
+.link5:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
+  background: #a73de4;
+  transition: 0.3s;
+}
 
 .menu_link:hover:after {
   width: 100%;

@@ -14,7 +14,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" index element={<Nyheter />} />
-        <Route path="/nyheter" index element={<NotesList />} />
+        <Route path="/nyheter" index element={<Nyheter />} />
         <Route path="/blogg" element={<NewsCard />} />
         <Route path="/add-new-note" element={<Addnew />} />
       </Routes>

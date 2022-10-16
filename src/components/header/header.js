@@ -32,6 +32,11 @@ function Nav() {
             </li>
             <li className="menu_item">
               <a href="" className="menu_link link2">
+                media
+              </a>
+            </li>
+            <li className="menu_item">
+              <a href="" className="menu_link link5">
                 verksamheter
               </a>
             </li>

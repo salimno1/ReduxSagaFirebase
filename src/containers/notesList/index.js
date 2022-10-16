@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import LatestNews from "../../components/latestNews/latestNew";
 import NewsCard from "../../components/newsCard/newsCard";
 import { initGetListData } from "./store/actions";
 import "./style.css";
@@ -34,10 +35,13 @@ const NotesList = () => {
       <div className="latestNewsContainer">
         <div className="leftnewsContainer">
           <div className="latestNewsWrapper">
+            <div className="sectionHeader1">
+              <h2 className="sectionTitle1">Senaste</h2>
+            </div>
             {notesList &&
               notesList.map((item) => (
                 <div className="LatestHolder">
-                  <NewsCard post={item} />
+                  <LatestNews post={item} />
                 </div>
               ))}
           </div>
