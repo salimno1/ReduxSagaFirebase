@@ -7,13 +7,14 @@ import Addnew from "./containers/addList";
 import Nav from "./components/header/header";
 import NewsCard from "./components/newsCard/newsCard";
 import Nyheter from "./pages/nyheter/nyheter";
+import LandingPage from "./pages/landing/landingPage";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" index element={<Nyheter />} />
+        <Route path="/" index element={<LandingPage />} />
         <Route path="/nyheter" index element={<Nyheter />} />
         <Route path="/blogg" element={<NewsCard />} />
         <Route path="/add-new-note" element={<Addnew />} />
