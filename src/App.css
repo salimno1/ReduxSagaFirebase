@@ -1,4 +1,8 @@
 .App {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: right;
   text-align: center;
 }
 
