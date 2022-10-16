@@ -12,7 +12,7 @@ body {
   position: relative;
 }
 .btn {
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 55px;
   z-index: 2;
@@ -96,6 +96,50 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.menu_link1 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu_link2 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu_link3 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu_link4 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 .menu_link:after {
   content: "";
@@ -105,7 +149,51 @@ body {
   width: 0;
   height: 5px;
   display: inline-flex;
+  background: #ffe100;
+  transition: 0.3s;
+}
+.link1:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
   background: #2691ef;
+  transition: 0.3s;
+}
+.link2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
+  background: #15c801;
+  transition: 0.3s;
+}
+.link3:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
+  background: #fb2a2a;
+  transition: 0.3s;
+}
+.link4:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
+  background: #33ebdc;
   transition: 0.3s;
 }
 

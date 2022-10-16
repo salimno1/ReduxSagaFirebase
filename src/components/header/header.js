@@ -26,22 +26,22 @@ function Nav() {
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link">
+              <a href="" className="menu_link link1">
                 Nyheter
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link">
+              <a href="" className="menu_link link2">
                 verksamheter
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link">
+              <a href="" className="menu_link link3">
                 samarbete
               </a>
             </li>
             <li className="menu_item">
-              <a href="" className="menu_link">
+              <a href="" className="menu_link link4">
                 kontakt
               </a>
             </li>

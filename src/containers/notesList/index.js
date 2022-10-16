@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import NewsCard from "../../components/newsCard/newsCard";
 import { initGetListData } from "./store/actions";
 import "./style.css";
 
@@ -9,8 +10,6 @@ const NotesList = () => {
     (state) => state.NotesListReducer
   );
 
-  console.log(notesList, isNotesDataFetching);
-
   useEffect(() => {
     dispatch(initGetListData());
   }, []);
@@ -19,14 +18,24 @@ const NotesList = () => {
     <div>data is fethcing</div>;
   }
   return (
-    <div className="notes-list-wrapper">
-      <h1>notes list</h1>
-
-      <ul>
+    <>
+      <div className="sectionHeader">
+        <h2 className="sectionTitle">Nyheter</h2>
+      </div>
+      <div className="notes-list-wrapper">
         {notesList &&
-          notesList.map((item) => <li key={item.id}>{item.name}</li>)}
-      </ul>
-    </div>
+          notesList.map((item) => (
+            <div className="postContainer">
+              <NewsCard post={item} />
+            </div>
+          ))}
+      </div>
+
+      <div className="latestNewsContainer">
+        <div className="leftnewsContainer"></div>
+        <div className="rightNewsContainer"></div>
+      </div>
+    </>
   );
 };
 
