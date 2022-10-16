@@ -6,7 +6,7 @@
   width: 250px;
   height: 300px;
   color: #1a4120;
-
+  width: 100%;
   text-align: left;
 }
 
@@ -18,14 +18,14 @@
   justify-content: space-between;
 }
 .topDiv img {
-  width: 250px;
-  height: 130px;
+  width: 100%;
+  height: 120px;
   object-fit: cover;
 }
 
 .lowerDiv {
   text-transform: uppercase;
-
+  font-size: smaller;
   flex: 2;
   font-family: "Roboto Condensed", sans-serif;
   display: flex;

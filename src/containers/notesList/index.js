@@ -32,7 +32,16 @@ const NotesList = () => {
       </div>
 
       <div className="latestNewsContainer">
-        <div className="leftnewsContainer"></div>
+        <div className="leftnewsContainer">
+          <div className="latestNewsWrapper">
+            {notesList &&
+              notesList.map((item) => (
+                <div className="LatestHolder">
+                  <NewsCard post={item} />
+                </div>
+              ))}
+          </div>
+        </div>
         <div className="rightNewsContainer"></div>
       </div>
     </>
