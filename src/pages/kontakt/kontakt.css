@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.kontaktContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.upperprofilDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 50px;
+  height: 70vh;
+  gap: 150px;
+}
+
+.upperprofilDiv div {
+  display: flex;
+  flex-direction: column;
+}
+.upperprofilDiv img {
+  align-self: center;
+  width: 180px;
+  height: 180px;
+  filter: grayscale(50%);
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.lowerSocialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 30vh;
+}
+i {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}

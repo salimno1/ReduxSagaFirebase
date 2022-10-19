@@ -9,6 +9,7 @@ import NewsCard from "./components/newsCard/newsCard";
 import Nyheter from "./pages/nyheter/nyheter";
 import LandingPage from "./pages/landing/landingPage";
 import { Partners } from "./pages/partners/partners";
+import Kontakt from "./pages/kontakt/kontakt";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" index element={<LandingPage />} />
         <Route path="/nyheter" index element={<Nyheter />} />
         <Route path="/partners" element={<Partners />} />
-        <Route path="/add-new-note" element={<Addnew />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
     </div>
   );
