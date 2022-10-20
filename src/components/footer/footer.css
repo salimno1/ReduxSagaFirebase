@@ -1,8 +1,8 @@
 .HeaderIcons {
-  background-color: rgba(255, 255, 255, 0.821);
+  background-color: rgb(255, 255, 255);
   height: 50px;
   display: flex;
-
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   gap: 20px;
   justify-content: space-between;
   align-items: center;

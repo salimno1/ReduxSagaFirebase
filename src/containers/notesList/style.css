@@ -71,6 +71,7 @@
   height: 500px;
 }
 .rightNewsContainer {
+  padding-top: 30px;
   flex: 1;
 }
 .LatestHolder {

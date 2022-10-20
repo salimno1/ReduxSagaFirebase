@@ -39,7 +39,11 @@ function Nav() {
             </li>
 
             <li className="menu_item">
-              <a href="" className="menu_link link5">
+              <a
+                href=""
+                className="menu_link link5"
+                onClick={() => navigate("/media")}
+              >
                 media
               </a>
             </li>
@@ -58,7 +62,7 @@ function Nav() {
                 className="menu_link link4"
                 onClick={() => navigate("/kontakt")}
               >
-                kontakt
+                Team
               </a>
             </li>
           </ul>

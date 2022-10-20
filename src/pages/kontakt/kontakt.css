@@ -26,11 +26,12 @@
   border-radius: 50%;
   margin-bottom: 10px;
 }
-.lowerSocialMedia {
+.lowerDivContact {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   height: 30vh;
 }
 i {
@@ -41,4 +42,8 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.lowerDivContact i {
+  font-size: 40px;
 }

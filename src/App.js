@@ -11,6 +11,7 @@ import LandingPage from "./pages/landing/landingPage";
 import { Partners } from "./pages/partners/partners";
 import Kontakt from "./pages/kontakt/kontakt";
 import Footer from "./components/footer/footer";
+import Media from "./pages/media/media";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/nyheter" index element={<Nyheter />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/media" element={<Media />} />
       </Routes>
     </div>
   );

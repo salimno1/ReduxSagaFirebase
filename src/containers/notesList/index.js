@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import { InstagramEmbed } from "react-social-media-embed";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "../../components/footer/footer";
 import LatestNews from "../../components/latestNews/latestNew";
 import NewsCard from "../../components/newsCard/newsCard";
 import { initGetListData } from "./store/actions";
+import { LinkedInEmbed } from "react-social-media-embed";
+
 import "./style.css";
 
 const NotesList = () => {
@@ -48,7 +51,27 @@ const NotesList = () => {
                 ))}
             </div>
           </div>
-          <div className="rightNewsContainer"></div>
+          <div className="rightNewsContainer">
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <InstagramEmbed
+                url="https://www.instagram.com/p/CjtJUmjjVcQ/?utm_source=ig_web_copy_link"
+                width={328}
+              />
+            </div>
+
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <InstagramEmbed
+                url="https://www.instagram.com/p/CjkFC7FDMao/?utm_source=ig_web_copy_link"
+                width={328}
+              />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <InstagramEmbed
+                url=" https://www.instagram.com/p/CjTFKuTDn5z/?utm_source=ig_web_copy_link"
+                width={328}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
