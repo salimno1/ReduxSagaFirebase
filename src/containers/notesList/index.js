@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Footer from "../../components/footer/footer";
 import LatestNews from "../../components/latestNews/latestNew";
 import NewsCard from "../../components/newsCard/newsCard";
 import { initGetListData } from "./store/actions";

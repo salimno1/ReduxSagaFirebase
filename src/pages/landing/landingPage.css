@@ -33,6 +33,7 @@
 
 .overlay {
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -49,11 +50,13 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-color: rgba(240, 248, 255, 0.85);
+  background-color: rgb(255, 255, 255);
 }
 .tillsammansLink {
   user-select: none;
 }
 .tillsammansLink:hover {
   cursor: pointer;
+}
+.main {
 }

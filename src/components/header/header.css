@@ -13,18 +13,18 @@ body {
 }
 .btn {
   position: fixed;
-  top: 25px;
-  right: 55px;
-  z-index: 2;
+  top: 15px;
+  right: 20px;
+  z-index: 5;
   display: flex;
-  width: 20px;
+  width: 30px;
   height: 20px;
   cursor: pointer;
 }
 .btn span {
   width: 30px;
   height: 2px;
-  background: #000;
+  background: rgb(0, 0, 0);
   display: flex;
   position: absolute;
   transform: 0.3s;
@@ -72,6 +72,7 @@ body {
   visibility: visible;
   transform: translateY(0.0001px);
   transition: 0.4s;
+  z-index: 2;
 }
 
 .menu_list {
@@ -204,7 +205,7 @@ body {
   width: 0;
   height: 5px;
   display: inline-flex;
-  background: #a73de4;
+  background: #15c801;
   transition: 0.3s;
 }
 

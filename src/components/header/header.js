@@ -34,13 +34,13 @@ function Nav() {
                 className="menu_link link1"
                 onClick={() => navigate("/nyheter")}
               >
-                Nyheter
+                Verksamheter
               </a>
             </li>
 
             <li className="menu_item">
               <a href="" className="menu_link link5">
-                verksamheter
+                media
               </a>
             </li>
             <li className="menu_item">

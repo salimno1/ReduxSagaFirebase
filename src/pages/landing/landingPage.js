@@ -4,11 +4,11 @@ import "./landingPage.css";
 import videoBg from "../../img/filmhemsida.mp4";
 import { useNavigate } from "react-router-dom";
 import Nyheter from "../nyheter/nyheter";
+import Footer from "../../components/footer/footer";
 function LandingPage() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="menuBg"></div>
       <div className="main">
         <div className="overlay">
           {" "}

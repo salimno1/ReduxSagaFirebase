@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
 
 .partnerLogo img {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   margin: 0px 10px;
   object-fit: contain;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.867);
   padding: 10px;
   border-radius: 10px;
 }
 .partnerLogo {
   height: 100vh;
-  background-color: rgba(240, 248, 255, 0.829);
+  background-color: rgba(240, 248, 255, 0.499);
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
@@ -35,10 +36,15 @@
   align-items: center;
   flex: 1;
   text-align: center;
-  background-color: rgba(240, 248, 255, 0.63);
+
   height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgba(240, 248, 255, 0.829);
+  background-color: rgba(255, 255, 255, 0.867);
+}
+
+.partnerLogo img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }

@@ -14,28 +14,46 @@ export const Partners = () => {
   return (
     <>
       <div className="partnerContainer">
-        <div className="partnerText">
-          <h2>
-            Vill ni vara med och påverka barn och unga i deras resa genom livet.
-            <br></br>
-            Tveka inte på att höra av er till oss för ett eventuellt samarbete.
-            <br></br>
-            <br></br>
-            <br></br>
-            Din hjälp kan bli den avgörande skillnaden.
-          </h2>
-        </div>
         <div className="partnerLogo">
-          <img src={lorans} alt="" />
-          <img src={dyno} alt="" />
-          <img src={svea} alt="" />
-          <img src={sthlm} alt="" />
-          <img src={relevant} alt="" />
-          <img src={ost} alt="" />
-          <img src={blue} alt="" />
-          <img src={moai} alt="" />
-
-          <img src={ideer} alt="" />
+          <a href="https://www.lorans.se/" target="_blank">
+            {" "}
+            <img src={lorans} alt="" />
+          </a>
+          <a href="https://www.dyno-security.se/#home" target="_blank">
+            <img src={dyno} alt="" />
+          </a>
+          <a href="https://sveafastigheter.se/" target="_blank">
+            <img src={svea} alt="" />
+          </a>
+          <a href="https://start.stockholm/" target="_blank">
+            <img src={sthlm} alt="" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCwoi01MDIiiLAt9_RV-E6zg"
+            target="_blank"
+          >
+            {" "}
+            <img src={relevant} alt="" />
+          </a>
+          <a
+            href="https://kultur.stockholm/kulturhus/ostberga-kulturhus/"
+            target="_blank"
+          >
+            <img src={ost} alt="" />
+          </a>
+          <a href="https://www.byggvesta.se/" target="_blank">
+            <img src={blue} alt="" />
+          </a>
+          <a
+            href="https://www.instagram.com/moaiorganics/?hl=en"
+            target="_blank"
+          >
+            <img src={moai} alt="" />
+          </a>
+          <a href="https://www.ideerforlivet.se/" target="_blank">
+            {" "}
+            <img src={ideer} alt="" />
+          </a>
         </div>
       </div>
     </>

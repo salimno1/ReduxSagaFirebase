@@ -1,0 +1,27 @@
+.HeaderIcons {
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 50px;
+  display: flex;
+
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.HeaderIcons img {
+  padding-left: 5px;
+  height: 50px;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.dummyicon {
+  width: 70px;
+}
+.socialIconz {
+  display: flex;
+  gap: 10px;
+}

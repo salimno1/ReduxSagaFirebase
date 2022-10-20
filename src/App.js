@@ -10,11 +10,13 @@ import Nyheter from "./pages/nyheter/nyheter";
 import LandingPage from "./pages/landing/landingPage";
 import { Partners } from "./pages/partners/partners";
 import Kontakt from "./pages/kontakt/kontakt";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <Footer />
       <Routes>
         <Route path="/" index element={<LandingPage />} />
         <Route path="/nyheter" index element={<Nyheter />} />
