@@ -52,20 +52,38 @@ const NotesList = () => {
             </div>
           </div>
           <div className="rightNewsContainer">
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "25px",
+              }}
+            >
               <InstagramEmbed
                 url="https://www.instagram.com/p/CjtJUmjjVcQ/?utm_source=ig_web_copy_link"
                 width={328}
               />
             </div>
 
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "25px",
+              }}
+            >
               <InstagramEmbed
                 url="https://www.instagram.com/p/CjkFC7FDMao/?utm_source=ig_web_copy_link"
                 width={328}
               />
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "25px",
+              }}
+            >
               <InstagramEmbed
                 url=" https://www.instagram.com/p/CjTFKuTDn5z/?utm_source=ig_web_copy_link"
                 width={328}

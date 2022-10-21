@@ -24,7 +24,7 @@
 .partnerContainer {
   display: flex;
   flex-direction: row;
-  background: url(../../img/graf.png);
+  background: url(../../img/graf.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;

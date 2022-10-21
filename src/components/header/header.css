@@ -161,7 +161,7 @@ body {
   width: 0;
   height: 5px;
   display: inline-flex;
-  background: #2691ef;
+  background: #15c801;
   transition: 0.3s;
 }
 .link2:after {
@@ -205,7 +205,7 @@ body {
   width: 0;
   height: 5px;
   display: inline-flex;
-  background: #15c801;
+  background: #2691ef;
   transition: 0.3s;
 }
 

@@ -31,20 +31,19 @@ function Nav() {
             <li className="menu_item">
               <a
                 href=""
-                className="menu_link link1"
-                onClick={() => navigate("/nyheter")}
-              >
-                Verksamheter
-              </a>
-            </li>
-
-            <li className="menu_item">
-              <a
-                href=""
                 className="menu_link link5"
                 onClick={() => navigate("/media")}
               >
                 media
+              </a>
+            </li>{" "}
+            <li className="menu_item">
+              <a
+                href=""
+                className="menu_link link1"
+                onClick={() => navigate("/nyheter")}
+              >
+                Verksamheter
               </a>
             </li>
             <li className="menu_item">
