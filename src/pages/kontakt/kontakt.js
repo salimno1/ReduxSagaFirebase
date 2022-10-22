@@ -2,6 +2,7 @@ import React from "react";
 import "./kontakt.css";
 import salim from "../../img/salim.jpg";
 import lamin from "../../img/lamin.jpg";
+import { SocialIcon } from "react-social-icons";
 
 const Kontakt = () => {
   return (
@@ -23,7 +24,10 @@ const Kontakt = () => {
           <div>
             {" "}
             <div className="textProfil">
-              <img src={lamin} alt="" />
+              <img
+                src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/307730135_1549711545483576_1512259872824296957_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cyfuGUCFp_wAX9Yx3Uz&_nc_ht=scontent-arn2-1.xx&oh=03_AdQfYHeY36phh7KWNe7I2i6NAcwWNFaLavpdQf-_vleJ_g&oe=637B1E10"
+                alt=""
+              />
               <h2>Mariana Montecinos</h2>
               <h4>Projekt ansvarig </h4>
               <br />
@@ -51,10 +55,22 @@ const Kontakt = () => {
           </div>
         </div>
         <div className="lowerDivContact">
+          <a href="mailto:vitarplats@gmail.com"></a>
           <h1>VITARPLATS@GMAIL.COM </h1>
-          <a href="mailto:vitarplats@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+
+          <div className="socialIconz">
+            <div className="facebookIcon">
+              <SocialIcon url="https://www.facebook.com/vitarplats" />
+            </div>
+            <div className="instagram">
+              <SocialIcon url="https://www.linkedin.com/company/vi-tar-plats/" />
+            </div>
+
+            <div className="linkedin">
+              {" "}
+              <SocialIcon url="https://www.instagram.com/vitarplatsostberga/" />
+            </div>
+          </div>
         </div>
       </div>
     </>
