@@ -1,5 +1,5 @@
 .HeaderIcons {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.821);
   height: 50px;
   display: flex;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -23,5 +23,5 @@
 }
 .socialIconz {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }

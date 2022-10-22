@@ -1,3 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 .singleContainer {
-  padding-top: 50px;
+  display: flex;
+
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+
+  padding-top: 100px;
+}
+.singleContainer h1 {
+  margin-bottom: 10px;
+}
+.containerX {
+  width: 60%;
+}
+
+.upperSingleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upperSingleContainer img {
+  padding-top: 5px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.containerX h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.726);
+}
+.postText {
+  padding-bottom: 50px;
+}
+
+.socialShare {
+  margin-top: 10px;
+  display: flex;
+  align-self: flex-end;
+  gap: 5px;
 }
