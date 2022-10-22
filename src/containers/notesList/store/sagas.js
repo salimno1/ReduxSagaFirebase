@@ -13,10 +13,7 @@ export default function* NotesListSaga() {
 function* getNotesListSaga() {
   yield put(initFetchingGetListData());
   try {
-    const response = yield call(
-      axios.get,
-      "https://vitarplats-8e791-default-rtdb.europe-west1.firebasedatabase.app/notesList.json"
-    );
+    const response = yield call(axios.get, "http://localhost:5000/api/posts/");
 
     if (response && response.status === 200) {
       const { data } = response;

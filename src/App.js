@@ -12,6 +12,7 @@ import { Partners } from "./pages/partners/partners";
 import Kontakt from "./pages/kontakt/kontakt";
 import Footer from "./components/footer/footer";
 import Media from "./pages/media/media";
+import SinglePage from "./pages/singlePage/singlePage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/partners" element={<Partners />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/post/:postId" element={<SinglePage />} />
       </Routes>
     </div>
   );

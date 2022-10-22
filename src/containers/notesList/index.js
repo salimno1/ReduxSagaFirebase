@@ -17,6 +17,7 @@ const NotesList = () => {
 
   useEffect(() => {
     dispatch(initGetListData());
+    console.log(notesList);
   }, []);
 
   if (isNotesDataFetching) {

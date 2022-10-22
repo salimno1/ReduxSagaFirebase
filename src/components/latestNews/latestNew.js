@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./latestNew.css";
 
 function LatestNews(item) {
@@ -8,9 +9,12 @@ function LatestNews(item) {
         <img src={item.post.pic} alt="" />
       </div>
       <div className="rightContainerDiv">
-        <div className="timestamp">Måndag 27 okt</div>
-        <h1 className="heading">{item.post.name}</h1>
-        <div className="content">{item.post.desc}</div>
+        <div className="timestamp">{item.post.createdAt}</div>
+        <h1 className="heading">{item.post.username}</h1>
+        <Link to={`/post/${item.post._id}`}>
+          {" "}
+          <div className="content">{item.post.desc}</div>
+        </Link>
       </div>
     </>
   );
