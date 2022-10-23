@@ -13,6 +13,7 @@ import Kontakt from "./pages/kontakt/kontakt";
 import Footer from "./components/footer/footer";
 import Media from "./pages/media/media";
 import SinglePage from "./pages/singlePage/singlePage";
+import Verksamheter from "./pages/verksamheter/verksamheter";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/media" element={<Media />} />
         <Route path="/post/:postId" element={<SinglePage />} />
+        <Route path="/verksamheter" index element={<Verksamheter />} />
       </Routes>
     </div>
   );

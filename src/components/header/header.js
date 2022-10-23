@@ -41,7 +41,7 @@ function Nav() {
               <a
                 href=""
                 className="menu_link link1"
-                onClick={() => navigate("/nyheter")}
+                onClick={() => navigate("/verksamheter")}
               >
                 Verksamheter
               </a>
