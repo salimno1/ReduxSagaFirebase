@@ -2,29 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import "./singlePage.css";
+import { FacebookIcon, TwitterIcon, LinkedinIcon } from "react-share";
 import {
-  FacebookIcon,
-  FacebookMessengerIcon,
-  TwitterIcon,
-  LinkedinIcon,
-} from "react-share";
-import {
-  EmailShareButton,
   FacebookShareButton,
-  InstapaperShareButton,
   LinkedinShareButton,
   TwitterShareButton,
 } from "react-share";
 
-import {
-  FacebookShareCount,
-  HatenaShareCount,
-  OKShareCount,
-  PinterestShareCount,
-  RedditShareCount,
-  TumblrShareCount,
-  VKShareCount,
-} from "react-share";
 const SinglePage = () => {
   const [post, setPost] = useState("");
   const location = useLocation();
