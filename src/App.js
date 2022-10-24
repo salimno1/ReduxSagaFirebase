@@ -25,7 +25,7 @@ function App() {
         <Route path="/nyheter" index element={<Nyheter />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/media" element={<Media />} />
+
         <Route path="/post/:postId" element={<SinglePage />} />
         <Route path="/verksamheter" index element={<Verksamheter />} />
       </Routes>

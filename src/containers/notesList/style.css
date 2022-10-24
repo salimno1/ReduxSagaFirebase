@@ -62,7 +62,10 @@
   text-transform: uppercase;
   font-size: 1.3em;
 }
-
+.latestNewsWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .latestNewsContainer {
   display: flex;
 }

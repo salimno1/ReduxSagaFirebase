@@ -24,11 +24,11 @@ const Verksamheter = () => {
               <br></br>- Skapa positiva förebilder<br></br> - Främja hälsa och
               studier för barn och ungdomar i utsatta områden.<br></br> - Arbeta
               för goda mötesplatser och miljöer. <br></br>- Erbjuda barn och
-              ungdomar en meningsfull framtid. - Länka ungdomar till arbete och
-              hälsa.<br></br> - Aktivera flera vuxna och därmed skapa olika
-              skyddsfaktorer runt barn och ungdomar i riskzon. <br></br>- Utöka
-              samarbete med verksamheter i och utanför området genom samarbeten.
-              - Effektivisera kostnader och kvalitet.
+              ungdomar en meningsfull framtid. <br></br> - Länka ungdomar till
+              arbete och hälsa.<br></br> - Aktivera flera vuxna och därmed skapa
+              olika skyddsfaktorer runt barn och ungdomar i riskzon. <br></br>-
+              Utöka samarbete med verksamheter i och utanför området genom
+              samarbeten. - Effektivisera kostnader och kvalitet.
             </p>
           </div>
         </div>

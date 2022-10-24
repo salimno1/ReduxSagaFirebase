@@ -40,10 +40,10 @@ const NotesList = () => {
 
         <div className="latestNewsContainer">
           <div className="leftnewsContainer">
+            <div className="sectionHeader1">
+              <h2 className="sectionTitle1">Senaste</h2>
+            </div>
             <div className="latestNewsWrapper">
-              <div className="sectionHeader1">
-                <h2 className="sectionTitle1">Senaste</h2>
-              </div>
               {notesList &&
                 notesList.map((item) => (
                   <div className="LatestHolder">
